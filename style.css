@@ -1,14 +1,22 @@
 body {
   font-family: Arial;
-  background: linear-gradient(to right, #ffe0cc, #fff5e6);
+  background: linear-gradient(135deg, #fff0e6, #ffe0cc);
   text-align: center;
   margin: 0;
+  color: #333;
 }
 
+/* 🌟 الهيدر */
 header {
-  background-color: #ff7a00;
+  background: linear-gradient(90deg, #ff7a00, #ff9a3d);
   color: white;
-  padding: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 🧭 الناف بار */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
@@ -16,37 +24,71 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
+nav a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* 🧩 الكروت */
 .card {
   background: white;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 30px;
-  width: 300px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔘 الأزرار */
 button {
-  background-color: #ff7a00;
+  background: linear-gradient(90deg, #ff7a00, #ff9a3d);
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #e66900;
+  transform: scale(1.05);
 }
 
+/* 🎯 النتيجة */
 #result {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #333;
 }
 
-footer {
-  margin-top: 50px;
+/* 🧱 الفوتر */
+.footer {
+  background: #ff7a00;
+  color: white;
+  padding: 25px;
+  margin-top: 60px;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* 📱 الجوال */
+@media (max-width: 600px) {
+  .card {
+    width: 85%;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
 }
