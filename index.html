@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>وين أروح الآن؟</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>✨ وين أروح الآن؟</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">تواصل</a>
+  </nav>
+</header>
+
+<section class="card">
+  <h2>اختاري مزاجك 🎯</h2>
+
+  <select id="mood">
+    <option value="calm">أبغى هدوء ☕</option>
+    <option value="fun">أبغى تغيير 🎉</option>
+    <option value="food">جوعانه 🍔</option>
+  </select>
+
+  <br><br>
+
+  <button onclick="suggestPlace()">🎲 اختار لي</button>
+
+  <p id="result"></p>
+</section>
+
+<footer>
+  <p>💛 صُنع بحب</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
